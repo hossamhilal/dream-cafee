@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/my-plugins.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" href="images/ico.png" type="image/x-icon" />
+    <title>  Dream Cafee  </title>
+</head>
+
+<body>
+
+    <div class="loader">
+        <img src="images/loader.gif" alt="loader" class="img-fluid">
+    </div>
+
+    <div class="page-content menu-page">
+
+        <div class="page-header">
+            <h3>  حجز غرفة للعوائل   </h3>
+            <div class="menu-btn"> 
+                <span></span>
+                <span></span>
+                <span></span> 
+            </div>
+            <div class="back-btn" onclick="goBack()"> <i class="icofont-long-arrow-left"></i> </div>
+        </div>
+
+        <div class="reservation-wrapper">
+            <form action="success.html"> 
+                <div class="field">
+                    <label> الحجز باسم </label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="field">
+                    <label> رقم الجوال  </label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="field">
+                    <label> عدد الافراد </label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="flex-field">
+                    <div class="field">
+                        <label> التاريخ </label>
+                        <input type="text" class="form-control date-input">
+                    </div>
+                    <div class="field">
+                        <label> الوقت </label>
+                        <input type="text" class="form-control time-input">
+                    </div>
+                </div> 
+
+                <div class="field">
+                    <label> الغرف المتاحة  </label>
+                    <select>
+                        <option value="1"> table 1 </option>
+                        <option value="2"> table 2 </option>
+                        <option value="3"> table 3 </option>
+                        <option value="4"> table 4 </option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label> تعليق  </label>
+                    <textarea></textarea>
+                </div>
+                
+                <p class="total">  الاجمالى : 310 ريال سعودى </p>
+                <button class="btn-def btn-brown" type="submit"> الحجز  </button>
+            </form>
+        </div>
+
+        <div class="fixed-tabs">
+            <a href="home.html" class="tab-box active"> <img src="images/home.png" alt="img" class="img-fluid"> </a>
+            <a href="offers.html" class="tab-box"> <img src="images/bookmark.png" alt="img" class="img-fluid"> </a>
+            <a href="favourite.html" class="tab-box"> <img src="images/heart.png" alt="img" class="img-fluid"> </a>
+            <a href="cart.html" class="tab-box"> <img src="images/cart.png" alt="img" class="img-fluid"> <span></span> </a>
+        </div>
+    </div>
+
+
+    <div class="side-menu">
+        <div class="head">
+            <div class="logo">
+                <img src="images/LOGO.png" alt="img" class="img-fluid">
+            </div>
+            <div class="info">
+                <h3> Hossam Hilal </h3>
+                <p> hossam.hilal@gmail.com </p>
+            </div>
+        </div>
+        <div class="list">
+            <a class="active" href="home.html"> <span> <img src="images/menu-home.png" alt="img" class="img-fluid"> </span> الرئيسية </a>
+            <a href="profile.html"> <span> <img src="images/menu-profile.png" alt="img" class="img-fluid"> </span> بياناتى </a>
+            <a href="favourite.html"> <span> <img src="images/menu-fav.png" alt="img" class="img-fluid"> </span> المفضلة </a>
+            <a href="order.html"> <span> <img src="images/menu-orders.png" alt="img" class="img-fluid"> </span> طلباتى </a>
+            <a href="offers.html"> <span> <img src="images/menu-offers.png" alt="img" class="img-fluid"> </span> العروض و الخصومات </a>
+            <a href="faq.html"> <span> <img src="images/menu-faq.png" alt="img" class="img-fluid"> </span> اسئلة متكررة </a>
+            <a href="policy.html"> <span> <img src="images/menu-terms.png" alt="img" class="img-fluid"> </span> الشروط و الاحكام </a>
+            <a href="contact.html"> <span> <img src="images/menu-contact.png" alt="img" class="img-fluid"> </span> تواصل معنا </a>
+            <a href="home.html"> <span> <img src="images/menu-about.png" alt="img" class="img-fluid"> </span> عن التطبيق </a>
+            <a href="#"> <span> <img src="images/menu-logout.png" alt="img" class="img-fluid"> </span> تسجيل دخول / تسجيل خروج </a>
+        </div>
+    </div>
+
+
+    <!--  JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/my-plugins.js"></script>
+    <script src="js/edit.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.time-input').mdtimepicker(); 
+            $('.date-input').datepicker({
+                prevText: ">",
+                nextText: "<"
+            });
+        });
+    </script>
+    
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/my-plugins.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" href="images/ico.png" type="image/x-icon" />
+    <title>  Dream Cafee  </title>
+</head>
+
+<body>
+
+    <div class="loader">
+        <img src="images/loader.gif" alt="loader" class="img-fluid">
+    </div>
+
+    <div class="page-content menu-page">
+
+        <div class="page-header">
+            <h3>  مكرونة بالفراخ  </h3>
+            <div class="menu-btn"> 
+                <span></span>
+                <span></span>
+                <span></span> 
+            </div>
+            <div class="back-btn" onclick="goBack()"> <i class="icofont-long-arrow-left"></i> </div>
+        </div>
+
+        <div class="single-products-page">
+           <div class="product-details">
+               <span class="offer"> 55% خصم </span>
+               <div class="img-box">
+                    <img src="images/cat-11.jpg" alt="product" class="img-fluid">
+               </div>
+               <div class="data">
+                   <div class="info">
+                        <h3>  مكرونة بالفراخ  </h3>
+                        <p> مكرونة, قطع فراخ, وايت صوص,كاتشاب </p>
+                   </div>
+                   <div class="price-box">
+                       <p> 20 - 25 دقيقة  </p>
+                       <h5> 150 ريال سعودى  </h5>
+                   </div>
+               </div>
+           </div> 
+
+           <div class="product-page-controls">
+               <form action="cart.html">
+                   <div class="box">
+                        <div class="poperites">
+                            <div class="radio-btns">
+                                <div class="radio-box">
+                                    <input type="radio" name="size" id="1">
+                                    <label for="1">  S </label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" name="size" id="2" checked>
+                                    <label for="2"> M </label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" name="size" id="3">
+                                    <label for="3"> L </label>
+                                </div>
+                            </div>
+                            <div class="count">
+                                <span class="bttn plus"> <i class="icofont-plus"></i> </span>
+                                <span class="bttn minus"> <i class="icofont-minus"></i>  </span>
+                                <span class="num"> 2 </span>
+                                <input class="product_num" name="product_num" value="2" type="hidden">
+                            </div>
+                        </div>
+                        <div class="details">
+                            <div class="controls">
+                                <div class="fav-btn"> 
+                                    <img src="images/un-favourited.png" alt="img" class="img-fluid failed">
+                                    <img src="images/favouited.png" alt="img" class="img-fluid success">
+                                </div>
+                                <div class="rate-btn show-modal">  <img src="images/face-rate.png" alt="img" class="img-fluid"> </div>
+                                <span class="rate-results"> 2.4  (2546) </span>
+                            </div>
+                            <button class="btn-def btn-brown" type="submit">   اضف الى السلة  </button>
+                        </div>
+                    </div>
+                </form>
+           </div>
+
+
+            <div class="related-products">
+                <h3>  منتجات ذات صلة </h3>
+                <!-- <div class="owl-carousel related-owl">
+                   <div class="item"> <img src="images/prod-1.png" alt="product" class="img-fluid"> </div>
+                   <div class="item"> <img src="images/prod-2.png" alt="product" class="img-fluid"> </div>
+                   <div class="item"> <img src="images/prod-3.png" alt="product" class="img-fluid"> </div>
+                   <div class="item"> <img src="images/prod-4.png" alt="product" class="img-fluid"> </div>
+                   <div class="item"> <img src="images/cat-8-.png" alt="product" class="img-fluid"> </div>
+                </div> -->
+                <ul class="related-owl">
+                   <li class="item"> <img src="images/prod-1.png" alt="product" class="img-fluid"> </li>
+                   <li class="item"> <img src="images/prod-2.png" alt="product" class="img-fluid"> </li>
+                   <li class="item"> <img src="images/prod-3.png" alt="product" class="img-fluid"> </li>
+                   <li class="item"> <img src="images/prod-4.png" alt="product" class="img-fluid"> </li>
+                   <li class="item"> <img src="images/cat-8-.png" alt="product" class="img-fluid"> </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="fixed-tabs">
+            <a href="home.html" class="tab-box active"> <img src="images/home.png" alt="img" class="img-fluid"> </a>
+            <a href="offers.html" class="tab-box"> <img src="images/bookmark.png" alt="img" class="img-fluid"> </a>
+            <a href="favourite.html" class="tab-box"> <img src="images/heart.png" alt="img" class="img-fluid"> </a>
+            <a href="cart.html" class="tab-box"> <img src="images/cart.png" alt="img" class="img-fluid"> <span></span> </a>
+        </div>
+    </div>
+
+
+    <div class="side-menu">
+        <div class="head">
+            <div class="logo">
+                <img src="images/LOGO.png" alt="img" class="img-fluid">
+            </div>
+            <div class="info">
+                <h3> Hossam Hilal </h3>
+                <p> hossam.hilal@gmail.com </p>
+            </div>
+        </div>
+       <div class="list">
+            <a class="active" href="home.html"> <span> <img src="images/menu-home.png" alt="img" class="img-fluid"> </span> الرئيسية </a>
+            <a href="profile.html"> <span> <img src="images/menu-profile.png" alt="img" class="img-fluid"> </span> بياناتى </a>
+            <a href="favourite.html"> <span> <img src="images/menu-fav.png" alt="img" class="img-fluid"> </span> المفضلة </a>
+            <a href="order.html"> <span> <img src="images/menu-orders.png" alt="img" class="img-fluid"> </span> طلباتى </a>
+            <a href="offers.html"> <span> <img src="images/menu-offers.png" alt="img" class="img-fluid"> </span> العروض و الخصومات </a>
+            <a href="faq.html"> <span> <img src="images/menu-faq.png" alt="img" class="img-fluid"> </span> اسئلة متكررة </a>
+            <a href="policy.html"> <span> <img src="images/menu-terms.png" alt="img" class="img-fluid"> </span> الشروط و الاحكام </a>
+            <a href="contact.html"> <span> <img src="images/menu-contact.png" alt="img" class="img-fluid"> </span> تواصل معنا </a>
+            <a href="home.html"> <span> <img src="images/menu-about.png" alt="img" class="img-fluid"> </span> عن التطبيق </a>
+            <a href="#"> <span> <img src="images/menu-logout.png" alt="img" class="img-fluid"> </span> تسجيل دخول / تسجيل خروج </a>
+        </div>
+    </div>
+
+
+    <div class="my-modal rate-wrapper">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn">  <i class="icofont-close-line"></i> </div>
+            <h3>  إضافة تقييم </h3>
+            <div class="radio-btns">
+                <div class="radio-box">
+                    <input type="radio" name="rate" id="smile" checked>
+                    <label for="smile"> <img src="images/face-happy.png" alt="img" class="img-fluid"> <span> جيد </span> </label>
+                </div>
+                <div class="radio-box">
+                    <input type="radio" name="rate" id="sad">
+                    <label for="sad"> <img src="images/face-sad.png" alt="img" class="img-fluid"> <span> سيئ </span> </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--  JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/my-plugins.js"></script>
+    <script src="js/edit.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'DinNextRegular';
+  src: url('DinNextRegular.eot');
+  src: url('DinNextRegular.eot?#iefix') format('embedded-opentype'),
+       url('DinNextRegular.svg#DinNextRegular') format('svg'),
+       url('DinNextRegular.ttf') format('truetype'),
+       url('DinNextRegular.woff') format('woff'),
+       url('DinNextRegular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
